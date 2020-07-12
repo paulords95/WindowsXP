@@ -43,34 +43,27 @@ const MenuBar = () => {
 
     const [startMenu, setStartMenu] = useState(false)
 
-
-
    setTimeout(()=> {
       setTime({
           time: updateTime()
       })
    }, 1000)
 
-
-
-
    const RenderStarMenu = () => {
       if (startMenu) {
         return (
             <StartMenu/>
        )
-      } else {
-          return (
-              <div></div>
-          )
-      }
+      } 
    }
 
     return (
         <div className='container'>
 
 
-            <RenderStarMenu/>
+            <div>
+                {RenderStarMenu()}
+            </div>
 
 
             <div className='menubar w-full h-8'>
