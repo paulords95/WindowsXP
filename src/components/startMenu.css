@@ -1,0 +1,7 @@
+.startMenuWrapper {
+    position: absolute;
+    height: 550px;
+    width: 400px;
+    background-color: #2F81E7;
+    bottom: 2rem;
+}
