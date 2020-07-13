@@ -66,7 +66,7 @@ const MenuBar = () => {
             </div>
 
 
-            <div className='menubar w-full h-8'>
+            <div className='menubar'>
                 <div className='startMenu noselect' onClick={()=> {
                     if (startMenu) {
                         setStartMenu(false)

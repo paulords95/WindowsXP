@@ -13,6 +13,8 @@
     background-color: #235ED6;
     z-index: 0;
     box-shadow:inset 1px 2px 5px white;
+    width: 100%;
+    height: 2rem;
 }
 
 .startMenu {
@@ -30,29 +32,34 @@
 
 .startMenu > img {
     position: absolute;
-    width: 1.2%;
-    margin-left: 5px;
-    margin-top: 4px;
+    width: 1.4rem;
+    margin-left: -45px;
+    margin-top: 5px;
 }
 
 .startMenu > h1 {
+    display: block;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 18px;
     color: white;
     font-weight: bolder;
     margin-left: 10px;
-    margin-top: 2px;
+    height: 0;
+    position: absolute;
+    margin: 7px 33px;
 }
 
 .toolsWrap {
     position: absolute;
     right: 0px;
     height: 100%;
-    width: 8%;
+    width: 9rem;
     background-color: #10ACF7;
     z-index: 2;
-    box-shadow:inset -2px 2px 2px white;
+    box-shadow: inset -2px 2px 2px white;
+    display: flex;
+    flex-direction: column;
 }
 .toolsWrap > div { 
     color: white;
