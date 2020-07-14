@@ -2,11 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    height: 550px;
+    height: 0px;
     width: 400px;
     background-color: #2F81E7;
     bottom: 2rem;
     border-radius: 1%;
+    opacity: 0;
+    transition: all 0.4s;
+    overflow: hidden;
 }
 
 .startContentLeft {
@@ -31,13 +34,11 @@
     width: 20%;
     margin-left: 8px;
     margin-top: 5px;
-    height: 85%;
 }
 
 #linkedin {
     position: relative;
     width: 20%;
-    height: 90%;
     margin-left: 8px;
     margin-top: 5px;
     padding-right: 0px;
@@ -147,14 +148,16 @@
     border-radius: 10%;
     height: 80px;
     width: 130px;
-    background-color: rgb(8, 8, 8);
     position: absolute;
-    margin-left: 250px;
+    margin-left: 240px;
     z-index: 3;
+    transition: all 4ms;
 }
 
 .waldoInfo > h1 {
-    color: white;
+    position: relative;
+    margin-top: 8px;
+    color: rgb(23, 0, 78);
 }
 
 .infoTextHide {
@@ -167,7 +170,7 @@
     color: rgb(255, 255, 255);
     font-size: 14px;
     left: 275px;
-    margin-top: 5px;
+    margin-top: 10px;
     text-justify: auto;
     font-weight: 600;
     z-index: 5;
@@ -175,7 +178,7 @@
 }
 
 .infoTextShow:hover {
-    color: rgb(48, 42, 42);
+    color: rgb(41, 4, 255);
     cursor: pointer;
 }
 
@@ -189,7 +192,26 @@
 }
 
 .waldo > div > a:hover {
-    color: rgb(100, 99, 99);
+    color: rgb(25, 0, 255);
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.waldo::after {
+    content: '';
+    position: absolute;
+    left: 250px;
+    z-index: 3;
+    height: 60px;
+    width: 0px;
+    border-radius: 5px;
+    background-color: rgb(0,0,255,0.3);
+    transition: all 1s;
+    transition-delay: 150ms;
+    opacity: 0;
+}
+
+.waldo:hover::after {
+    width: 115px;
+    opacity: 1;
 }

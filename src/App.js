@@ -5,9 +5,11 @@ import StartBar from './components/startMenuBar'
 
 
 function App() {
+
+
   return (
     <div className="App">
-        <StartBar/>
+        <StartBar />
     </div>
   );
 }
