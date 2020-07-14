@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "db8e4cc5db74a9330e8e868480a6240e",
+    "revision": "1589f1f274360077acf06195ccd98357",
     "url": "/WindowsXP/index.html"
   },
   {
-    "revision": "047d8543de5424c565c4",
-    "url": "/WindowsXP/static/css/main.1eec148b.chunk.css"
+    "revision": "030afea0f604efada1e5",
+    "url": "/WindowsXP/static/css/main.9440d532.chunk.css"
   },
   {
     "revision": "41e4dfb860dd748890eb",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WindowsXP/static/js/2.cff5b163.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "047d8543de5424c565c4",
-    "url": "/WindowsXP/static/js/main.c07c4c24.chunk.js"
+    "revision": "030afea0f604efada1e5",
+    "url": "/WindowsXP/static/js/main.bbf8c2e7.chunk.js"
   },
   {
     "revision": "5c5bd1e8b221667c2612",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6f785991d02a0c48abc64737f3bfb57b",
     "url": "/WindowsXP/static/media/logo.6f785991.png"
+  },
+  {
+    "revision": "14b6941574d1ad0cfa114ce796038854",
+    "url": "/WindowsXP/static/media/wallaper.14b69415.jpg"
   },
   {
     "revision": "eb1d64c8a222ae60792eb3051f7f367a",
