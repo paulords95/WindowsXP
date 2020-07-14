@@ -1,7 +1,10 @@
 .App {
   text-align: center;
   background-image: url('../src/imgs/wallaper.jpg');
-  width: 100%;
+  background-position: center;
+  background-clip: border-box;
+  background-size: cover;
+  width: auto;
   height: 100vh;
 }
 
