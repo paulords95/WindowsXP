@@ -40,19 +40,27 @@ const MenuBar = (props) => {
     });
   }, 1000);
 
-  const RenderStarMenu = () => {
+
     if (startMenu) {
-      console.log('foi')
-      return <StartMenu />;
+      let menu = document.querySelector('.startMenuWrapper')
+      menu.style.opacity = '1'
+      menu.style.height = '550px'
+    } 
+    if (startMenu === false && document.querySelector('.startMenuWrapper')){
+      let menu = document.querySelector('.startMenuWrapper')
+      menu.style.opacity = '0'
+      menu.style.height = '0px'
     }
-  };
 
   return (
     <div className="container">
-      <div className='desktop' onClick={()=> {
-        setStartMenu(false)
-      }}></div>
-      <div>{RenderStarMenu()}</div>
+      <div
+        className="desktop"
+        onClick={() => {
+          setStartMenu(false);
+        }}
+      ></div>
+      <div><StartMenu/></div>
       <div className="menubar">
         <div
           className="startMenu noselect"
@@ -61,7 +69,6 @@ const MenuBar = (props) => {
               setStartMenu(false);
             } else {
               setStartMenu(true);
-
             }
           }}
         >
