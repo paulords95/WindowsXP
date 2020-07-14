@@ -103,3 +103,9 @@
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
   }
+
+  .desktop {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+  }
