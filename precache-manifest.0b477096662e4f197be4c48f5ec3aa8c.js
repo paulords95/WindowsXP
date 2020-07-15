@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "84b09434b5b0a9f54107bb57b2423cd3",
+    "revision": "0a212c8cfd4682db3121b93e17c952af",
     "url": "/WindowsXP/index.html"
   },
   {
-    "revision": "3c1c89a7f1a706530eca",
-    "url": "/WindowsXP/static/css/main.f8a016b3.chunk.css"
+    "revision": "fdbe14fc31645a3f0c8b",
+    "url": "/WindowsXP/static/css/main.ac7f9184.chunk.css"
   },
   {
-    "revision": "41e4dfb860dd748890eb",
-    "url": "/WindowsXP/static/js/2.cff5b163.chunk.js"
+    "revision": "d09e0a8dcb2c10d0f2ac",
+    "url": "/WindowsXP/static/js/2.8620d656.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/WindowsXP/static/js/2.cff5b163.chunk.js.LICENSE.txt"
+    "url": "/WindowsXP/static/js/2.8620d656.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3c1c89a7f1a706530eca",
-    "url": "/WindowsXP/static/js/main.bbf8c2e7.chunk.js"
+    "revision": "fdbe14fc31645a3f0c8b",
+    "url": "/WindowsXP/static/js/main.d49e2d1d.chunk.js"
   },
   {
     "revision": "5c5bd1e8b221667c2612",
