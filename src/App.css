@@ -1,11 +1,11 @@
 .App {
   text-align: center;
-  background-image: url('../src/imgs/wallaper.jpg');
+  background-image: url("../src/imgs/wallaper.jpg");
   background-position: center;
   background-clip: border-box;
   background-size: cover;
   width: auto;
   height: 100vh;
+  min-height: 500px;
   overflow: hidden;
 }
-

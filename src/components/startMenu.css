@@ -1,217 +1,211 @@
 .startMenuWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    height: 0px;
-    width: 400px;
-    background-color: #2F81E7;
-    bottom: 2rem;
-    border-radius: 1%;
-    opacity: 0;
-    transition: all 0.4s;
-    overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  height: 0px;
+  width: 400px;
+  background-color: #2f81e7;
+  bottom: 2rem;
+  border-radius: 1%;
+  opacity: 0;
+  transition: all 0.4s;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .startContentLeft {
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 2px;
-    background-color: #FEFEFE;
-    height: 430px;
-    width: 250px;
-    border-radius: 1%;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 2px;
+  background-color: #fefefe;
+  height: 430px;
+  width: 250px;
+  border-radius: 1%;
 }
-
 
 .startContentLeft > ul {
-    margin-top: 4%;
-    margin-left: -16%;
+  margin-top: 4%;
+  margin-left: -16%;
 }
 
-
 #gh {
-    position: relative;
-    width: 20%;
-    margin-left: 8px;
-    margin-top: 5px;
+  position: relative;
+  width: 20%;
+  margin-left: 8px;
+  margin-top: 5px;
 }
 
 #linkedin {
-    position: relative;
-    width: 20%;
-    margin-left: 8px;
-    margin-top: 5px;
-    padding-right: 0px;
+  position: relative;
+  width: 20%;
+  margin-left: 8px;
+  margin-top: 5px;
+  padding-right: 0px;
 }
-
 
 .leftTitle {
-    font-weight: 600;
-    font-size: 24px;
+  font-weight: 600;
+  font-size: 24px;
 }
 
-
 .leftDescription {
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: -20px;
-    margin-left: 2px;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: -20px;
+  margin-left: 2px;
 }
 
 .itemList {
-    display: inline-flex;
-    text-align: start;
-    height: 60px;
-    z-index: 2;
+  display: inline-flex;
+  text-align: start;
+  height: 60px;
+  z-index: 2;
 }
 
-.itemList:hover{
-    cursor: pointer;
-    background-color: rgb(217, 234, 255);
-    border-radius: 4%;
+.itemList:hover {
+  cursor: pointer;
+  background-color: rgb(217, 234, 255);
+  border-radius: 4%;
 }
 
-.titleWrap{
-    margin-left: 5px;
-    margin-top: -10px;
+.titleWrap {
+  margin-left: 5px;
+  margin-top: -10px;
 }
-
-
 
 .startContentRight {
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 253px;
-    background-color: #D0E6FD;
-    height: 430px;
-    width: 145px;
-    border-radius: 1%;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 253px;
+  background-color: #d0e6fd;
+  height: 430px;
+  width: 145px;
+  border-radius: 1%;
 }
 
 .userName {
-    display: flex;
-    position: absolute;
-    width: 400px;
-    margin-left: 2px;
-    margin-top: 5px;
-    background-color: blanchedalmond-;
-    height: 60px;
-   /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(10,65,145,1) 1%, rgba(14,100,203,0.8575805322128851) 54%, rgba(0,212,255,1) 98%);*/
+  display: flex;
+  position: absolute;
+  width: 400px;
+  margin-left: 2px;
+  margin-top: 5px;
+  background-color: blanchedalmond-;
+  height: 60px;
+  /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(10,65,145,1) 1%, rgba(14,100,203,0.8575805322128851) 54%, rgba(0,212,255,1) 98%);*/
 }
 
-#userAvatar{
-    width: 16%;
-    margin-left: 10px;
-    border-radius: 10%;
+#userAvatar {
+  width: 16%;
+  margin-left: 10px;
+  border-radius: 10%;
 }
-
 
 #avatarName {
-    position: relative;
-    height: 50px;
-    margin-top: 15px;
-    margin-left: 10px;
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
+  position: relative;
+  height: 50px;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
 }
 .projects {
-    height: 5px;
+  height: 5px;
 }
 
 .projects:hover {
-    cursor: text;
-    background-color: white;
+  cursor: text;
+  background-color: white;
 }
 
 .projects > div > h1:hover {
-    background-color: none;
+  background-color: none;
 }
 
 .projects > div > h1 {
-    text-align: center;
-    position: relative;
-    margin-top: 2px;
-    font-size: 22px;
+  text-align: center;
+  position: relative;
+  margin-top: 2px;
+  font-size: 22px;
 }
 
 .waldo > div > h1 {
-    margin-top: 2rem;
-    text-align: center;
-    font-weight: 400;
-    font-size: 18px;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .waldoInfo {
-    margin-top: -10px;
-    opacity: 40%;
-    border-radius: 10%;
-    height: 80px;
-    width: 130px;
-    position: absolute;
-    margin-left: 240px;
-    z-index: 3;
-    transition: all 4ms;
+  margin-top: -10px;
+  opacity: 40%;
+  border-radius: 10%;
+  height: 80px;
+  width: 130px;
+  position: absolute;
+  margin-left: 240px;
+  z-index: 3;
+  transition: all 4ms;
 }
 
 .waldoInfo > h1 {
-    position: relative;
-    margin-top: 8px;
-    color: rgb(23, 0, 78);
+  position: relative;
+  margin-top: 8px;
+  color: rgb(23, 0, 78);
 }
 
 .infoTextHide {
-    display: none;
+  display: none;
 }
 
 .infoTextShow {
-    position: absolute;
-    display: flex;
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    left: 275px;
-    margin-top: 10px;
-    text-justify: auto;
-    font-weight: 600;
-    z-index: 5;
-    text-decoration: none;
+  position: absolute;
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  left: 275px;
+  margin-top: 10px;
+  text-justify: auto;
+  font-weight: 600;
+  z-index: 5;
+  text-decoration: none;
 }
 
 .infoTextShow:hover {
-    color: rgb(41, 4, 255);
-    cursor: pointer;
+  color: rgb(41, 4, 255);
+  cursor: pointer;
 }
 
 .waldo > div > a {
-    position: absolute;
-    color: black;
-    margin-top: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 20px;
+  position: absolute;
+  color: black;
+  margin-top: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .waldo > div > a:hover {
-    color: rgb(25, 0, 255);
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+  color: rgb(25, 0, 255);
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
 .waldo::after {
-    content: '';
-    position: absolute;
-    left: 250px;
-    z-index: 3;
-    height: 60px;
-    width: 0px;
-    border-radius: 5px;
-    background-color: rgb(0,0,255,0.3);
-    transition: all 1s;
-    transition-delay: 150ms;
-    opacity: 0;
+  content: "";
+  position: absolute;
+  left: 250px;
+  z-index: 3;
+  height: 60px;
+  width: 0px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 255, 0.3);
+  transition: all 1s;
+  transition-delay: 150ms;
+  opacity: 0;
 }
 
 .waldo:hover::after {
-    width: 115px;
-    opacity: 1;
+  width: 115px;
+  opacity: 1;
 }

@@ -1,131 +1,177 @@
 .notepadContainer {
-    position: relative;
-    margin: 0 auto;
-    height: 53%;
-    top: 20px;
-    width: 35%;
-    background-color: white;
-    background-color: #235ed6;
-    border-radius: 5px;
-    box-shadow: inset -1px 1px 1px white;
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  background-color: #235ed6;
+  border-radius: 5px;
+  box-shadow: inset -1px 1px 1px white;
 }
 
 .notepadContainer::after {
-    display: flex;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 27px;
-    z-index: 1;
+  display: flex;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 27px;
+  z-index: 1;
 }
 
-.notepadContainer>h3 {
-    position: absolute;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    left: 30px;
-    top: -5px;
+.notepadContainer > h3 {
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  left: 30px;
+  top: -5px;
 }
-
 
 .closePad {
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    height: 21px;
-    width: 21px;
-    color: white;
-    background-color: red;
-    border-radius: 3px;
-    z-index: 2;
-    border: 1px solid white;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  height: 21px;
+  width: 21px;
+  color: white;
+  background-color: red;
+  border-radius: 3px;
+  z-index: 2;
+  border: 1px solid white;
 }
 
 .closePad:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .maximizePad {
-    position: absolute;
-    top: 2px;
-    right: 27px;
-    height: 21px;
-    width: 21px;
-    color: white;
-    border-radius: 3px;
-    z-index: 2;
-    border: 1px solid white;
+  position: absolute;
+  top: 2px;
+  right: 27px;
+  height: 21px;
+  width: 21px;
+  color: white;
+  border-radius: 3px;
+  z-index: 2;
+  border: 1px solid white;
 }
 
 .maximizePad::after {
-    content: "";
-    color: white;
+  content: "";
+  color: white;
 }
 
 .maximizePad:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.maximizePad>span {
-    position: absolute;
-    width: 12px;
-    height: 9px;
-    bottom: 4px;
-    transform: translateX(-50%);
-    border-bottom: 1px solid rgb(255, 255, 255);
-    border-top: 2px solid rgb(255, 255, 255);
-    border-left: 1px solid rgb(255, 255, 255);
-    border-right: 1px solid rgb(255, 255, 255);
+.maximizePad > span {
+  position: absolute;
+  width: 12px;
+  height: 9px;
+  bottom: 4px;
+  transform: translateX(-50%);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-top: 2px solid rgb(255, 255, 255);
+  border-left: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgb(255, 255, 255);
 }
 
 .minimizePad {
-    position: absolute;
-    top: 2px;
-    right: 52px;
-    height: 21px;
-    width: 21px;
-    color: white;
-    border-radius: 3px;
-    z-index: 2;
-    border: 1px solid white;
+  position: absolute;
+  top: 2px;
+  right: 52px;
+  height: 21px;
+  width: 21px;
+  color: white;
+  border-radius: 3px;
+  z-index: 2;
+  border: 1px solid white;
 }
 
 .maximizePad:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.minimizePad>span {
-    position: absolute;
-    width: 12px;
-    height: 9px;
-    bottom: 4px;
-    transform: translateX(-50%);
-    border-bottom: 2px solid rgb(255, 255, 255);
+.minimizePad > span {
+  position: absolute;
+  width: 12px;
+  height: 9px;
+  bottom: 4px;
+  transform: translateX(-50%);
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .minimizePad:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .options {
-    position: relative;
-    width: 98.5%;
-    min-height: 22px;
-    left: 5px;
-    top: 30px;
-    background-color: #EDEBDD;
+  position: absolute;
+  width: auto;
+  min-height: 22px;
+  left: 5px;
+  right: 5px;
+  top: 30px;
+  background-color: #edebdd;
 }
 
-
 .padContent {
-    position: sticky;
-    margin-top: 32px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    width: 98.5%;
-    height: 87%;
-    background-color: white;
-    z-index: 2;
+  position: absolute;
+  top: 55px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  width: auto;
+  height: auto;
+  background-color: white;
+}
+
+#borderOne {
+  position: absolute;
+  border-top: 6px solid yellowgreen;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+#borderOne:hover {
+  cursor: s-resize;
+}
+
+#borderTwo {
+  position: absolute;
+  border-left: 6px solid green;
+  top: 0;
+  height: 100%;
+  z-index: 5;
+}
+
+#borderTwo:hover {
+  cursor: w-resize;
+}
+
+#borderThree {
+  position: absolute;
+  border-left: 6px solid black;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 5;
+}
+
+#borderThree:hover {
+  cursor: w-resize;
+}
+
+#borderFour {
+  position: absolute;
+  border-top: 6px solid rgb(9, 10, 5);
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+#borderFour:hover {
+  cursor: s-resize;
 }

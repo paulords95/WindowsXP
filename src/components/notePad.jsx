@@ -1,9 +1,13 @@
 import React from "react";
 import "./notePad.css";
 
-const NotePad = () => {
+const NotePad = (e) => {
   return (
     <div className="notepadContainer">
+      {/* <div id="borderOne" />
+      <div id="borderTwo" />
+      <div id="borderThree" />
+      <div id="borderFour" /> */}
       <h3>Sem títuo - Bloco de Notas</h3>
       <div className="closePad">X</div>
       <div className="maximizePad">

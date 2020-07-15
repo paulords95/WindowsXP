@@ -27,6 +27,10 @@ const updateTime = () => {
   return hour() + ":" + minutes();
 };
 
+
+
+
+
 const MenuBar = (props) => {
   const [time, setTime] = useState({
     time: updateTime(),
@@ -40,17 +44,16 @@ const MenuBar = (props) => {
     });
   }, 1000);
 
-
-    if (startMenu) {
-      let menu = document.querySelector('.startMenuWrapper')
-      menu.style.opacity = '1'
-      menu.style.height = '550px'
-    } 
-    if (startMenu === false && document.querySelector('.startMenuWrapper')){
-      let menu = document.querySelector('.startMenuWrapper')
-      menu.style.opacity = '0'
-      menu.style.height = '0px'
-    }
+  if (startMenu) {
+    let menu = document.querySelector(".startMenuWrapper");
+    menu.style.opacity = "1";
+    menu.style.height = "550px";
+  }
+  if (startMenu === false && document.querySelector(".startMenuWrapper")) {
+    let menu = document.querySelector(".startMenuWrapper");
+    menu.style.opacity = "0";
+    menu.style.height = "0px";
+  }
 
   return (
     <div className="container">
@@ -60,7 +63,9 @@ const MenuBar = (props) => {
           setStartMenu(false);
         }}
       ></div>
-      <div><StartMenu/></div>
+      <div>
+        <StartMenu />
+      </div>
       <div className="menubar">
         <div
           className="startMenu noselect"
