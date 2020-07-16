@@ -12,8 +12,18 @@ const NotePad = (e) => {
       <div className="minimizePad">
         <span></span>
       </div>
-      <div className="options"></div>
-      <div className="padContent"></div>
+      <div className="options">
+        <ul className="fileTab">
+          <li>Arquivo</li>
+          <li>Editar</li>
+          <li>Formatar</li>
+          <li>Exibir</li>
+          <li>Ajuda</li>
+        </ul>
+      </div>
+      <div className="padContent">
+        <textarea name="notes" id="note" cols="30" rows="10"></textarea>
+      </div>
     </div>
   );
 };

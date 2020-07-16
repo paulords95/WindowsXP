@@ -110,11 +110,13 @@
 .options {
   position: absolute;
   width: auto;
-  min-height: 22px;
+  height: 25px;
   left: 5px;
   right: 5px;
   top: 30px;
   background-color: #edebdd;
+  border-bottom: 1px solid #6e95e2;
+  z-index: 10;
 }
 
 .padContent {
@@ -175,4 +177,39 @@
 
 #borderFour:hover {
   cursor: s-resize;
+}
+
+.fileTab {
+  position: absolute;
+  margin-top: 1px;
+  left: -40px;
+}
+
+.fileTab > li {
+  display: inline;
+  position: relative;
+  color: black;
+  list-style: NONE;
+  padding-inline-start: 5px;
+  padding-inline-end: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 14px;
+}
+
+.fileTab > li:hover {
+  background-color: #235ed6;
+  color: white;
+  cursor: default;
+}
+
+textarea {
+  position: relative;
+  width: 99%;
+  height: 99%;
+  resize: none;
+  overflow: hidden;
+  outline: none;
+  min-width: 100px;
+  border: none;
 }
