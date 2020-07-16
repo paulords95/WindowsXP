@@ -8,6 +8,7 @@
   border-radius: 5px;
   box-shadow: inset -1px 1px 1px white;
   min-width: 350px;
+  min-height: 200px;
 }
 
 .notepadContainer::after {
@@ -130,55 +131,6 @@
   background-color: white;
 }
 
-#borderOne {
-  position: absolute;
-  border-top: 6px solid yellowgreen;
-  top: 0;
-  width: 100%;
-  z-index: 5;
-}
-
-#borderOne:hover {
-  cursor: s-resize;
-}
-
-#borderTwo {
-  position: absolute;
-  border-left: 6px solid green;
-  top: 0;
-  height: 100%;
-  z-index: 5;
-}
-
-#borderTwo:hover {
-  cursor: w-resize;
-}
-
-#borderThree {
-  position: absolute;
-  border-left: 6px solid black;
-  right: 0;
-  top: 0;
-  height: 100%;
-  z-index: 5;
-}
-
-#borderThree:hover {
-  cursor: w-resize;
-}
-
-#borderFour {
-  position: absolute;
-  border-top: 6px solid rgb(9, 10, 5);
-  bottom: 0;
-  width: 100%;
-  z-index: 5;
-}
-
-#borderFour:hover {
-  cursor: s-resize;
-}
-
 .fileTab {
   position: absolute;
   margin-top: 1px;
@@ -205,11 +157,11 @@
 
 textarea {
   position: relative;
-  width: 99%;
-  height: 99%;
+  width: 99.2%;
+  height: 98.5%;
   resize: none;
-  overflow: hidden;
+  overflow: scroll;
   outline: none;
-  min-width: 100px;
-  border: none;
+  border-radius: 5px;
+  border: transparent;
 }
