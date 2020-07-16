@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f6f4055c03951bcc9bdd21255dbbf515",
+    "revision": "adcb5a1a095c4380aee9d8513752729d",
     "url": "/WindowsXP/index.html"
   },
   {
-    "revision": "13e71c80a2c900066c14",
-    "url": "/WindowsXP/static/css/main.b4811bd7.chunk.css"
+    "revision": "4008474f8de9c8cda082",
+    "url": "/WindowsXP/static/css/main.cb957129.chunk.css"
   },
   {
     "revision": "44919ffc3b3a666a54c5",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WindowsXP/static/js/2.a2118e37.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "13e71c80a2c900066c14",
-    "url": "/WindowsXP/static/js/main.d134de60.chunk.js"
+    "revision": "4008474f8de9c8cda082",
+    "url": "/WindowsXP/static/js/main.1db519d5.chunk.js"
   },
   {
     "revision": "5c5bd1e8b221667c2612",
