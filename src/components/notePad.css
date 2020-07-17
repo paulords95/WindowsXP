@@ -132,13 +132,14 @@
 }
 
 .fileTab {
+  display: flex;
   position: absolute;
   margin-top: 1px;
   left: -40px;
 }
 
 .fileTab > li {
-  display: inline;
+  display: flex;
   position: relative;
   color: black;
   list-style: NONE;

@@ -1,0 +1,43 @@
+#fileList {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 25px;
+  left: 0;
+  justify-content: flex-start;
+  background-color: white;
+  list-style: none;
+  width: 100px;
+  height: max-content;
+  border: 1px solid grey;
+  z-index: 10;
+}
+
+#fileList > li {
+  position: relative;
+  text-align: start;
+  width: 120%;
+  color: grey;
+  left: -40px;
+  right: -15px;
+  margin-top: 0;
+  list-style: none;
+  padding-left: 10px;
+  z-index: 10;
+}
+
+#fileList > li:hover {
+  background-color: #235ed6;
+  width: 130%;
+  cursor: default;
+}
+
+#fileList > hr {
+  position: relative;
+  text-align: start;
+  width: 120%;
+  margin-left: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  left: -35px;
+}
