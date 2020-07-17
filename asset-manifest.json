@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/WindowsXP/static/css/main.cb957129.chunk.css",
-    "main.js": "/WindowsXP/static/js/main.1db519d5.chunk.js",
-    "main.js.map": "/WindowsXP/static/js/main.1db519d5.chunk.js.map",
+    "main.css": "/WindowsXP/static/css/main.068c6752.chunk.css",
+    "main.js": "/WindowsXP/static/js/main.e0b51b12.chunk.js",
+    "main.js.map": "/WindowsXP/static/js/main.e0b51b12.chunk.js.map",
     "runtime-main.js": "/WindowsXP/static/js/runtime-main.08e4eaaf.js",
     "runtime-main.js.map": "/WindowsXP/static/js/runtime-main.08e4eaaf.js.map",
     "static/js/2.a2118e37.chunk.js": "/WindowsXP/static/js/2.a2118e37.chunk.js",
     "static/js/2.a2118e37.chunk.js.map": "/WindowsXP/static/js/2.a2118e37.chunk.js.map",
     "index.html": "/WindowsXP/index.html",
-    "precache-manifest.8577940150eb41181c4a5de5685434cb.js": "/WindowsXP/precache-manifest.8577940150eb41181c4a5de5685434cb.js",
+    "precache-manifest.140b323a0a9cd5bc067e6ef673888485.js": "/WindowsXP/precache-manifest.140b323a0a9cd5bc067e6ef673888485.js",
     "service-worker.js": "/WindowsXP/service-worker.js",
-    "static/css/main.cb957129.chunk.css.map": "/WindowsXP/static/css/main.cb957129.chunk.css.map",
+    "static/css/main.068c6752.chunk.css.map": "/WindowsXP/static/css/main.068c6752.chunk.css.map",
     "static/js/2.a2118e37.chunk.js.LICENSE.txt": "/WindowsXP/static/js/2.a2118e37.chunk.js.LICENSE.txt",
     "static/media/avatar.jfif": "/WindowsXP/static/media/avatar.89a810dd.jfif",
     "static/media/defender.png": "/WindowsXP/static/media/defender.d11607df.png",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.08e4eaaf.js",
     "static/js/2.a2118e37.chunk.js",
-    "static/css/main.cb957129.chunk.css",
-    "static/js/main.1db519d5.chunk.js"
+    "static/css/main.068c6752.chunk.css",
+    "static/js/main.e0b51b12.chunk.js"
   ]
 }
