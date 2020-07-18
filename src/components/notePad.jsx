@@ -6,6 +6,9 @@ const NotePad = (e) => {
   const [click, setClick] = useState({
     menu1: false,
     menu2: false,
+    menu3: false,
+    menu4: false,
+    menu5: false,
   });
 
   const showFileTabOptions = () => {
@@ -24,21 +27,57 @@ const NotePad = (e) => {
     }
   };
 
+  const showEditTabOptions = () => {
+    if (click.menu2) {
+      return (
+        <OptionMenu
+          option1="Desfazer"
+          option2="Recortar"
+          option3="Copiar"
+          option4="Copiar"
+          option5="Excluir"
+          option6="Localizar"
+          option7="Substituir"
+        />
+      );
+    }
+  };
+
   const hideMenuOnClick = () => {
     const notePad = document.querySelector(".notepadContainer");
     const desktop = document.querySelector(".desktop");
     notePad.addEventListener("click", () => {
-      if (click.menu1) {
+      if (
+        click.menu1 ||
+        click.menu2 ||
+        click.menu3 ||
+        click.menu4 ||
+        click.menu5
+      ) {
         setClick({
           menu1: false,
+          menu2: false,
+          menu3: false,
+          menu4: false,
+          menu5: false,
         });
       }
     });
 
     desktop.addEventListener("click", () => {
-      if (click.menu1) {
+      if (
+        click.menu1 ||
+        click.menu2 ||
+        click.menu3 ||
+        click.menu4 ||
+        click.menu5
+      ) {
         setClick({
           menu1: false,
+          menu2: false,
+          menu3: false,
+          menu4: false,
+          menu5: false,
         });
       }
     });
@@ -99,6 +138,7 @@ const NotePad = (e) => {
               }}
             >
               Editar
+              {showEditTabOptions()}
             </div>
           </li>
           <li>
