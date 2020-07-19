@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, createRef } from "react";
 import "./ResizableComponent.css";
-import { useWindowScroll } from "beautiful-react-hooks";
 
 const ResizableComponent = () => {
+  let isResizing = false;
+
   useEffect(() => {
-    let isResizing = false;
-    const resizeWrap = document.querySelector(".resizableWrap");
     const ne = document.querySelector(".ne");
     const nw = document.querySelector(".nw");
     const sw = document.querySelector(".sw");
@@ -21,11 +20,15 @@ const ResizableComponent = () => {
         let prevX = e.clientX;
         let prevY = e.clientY;
         const mouseMove = (e) => {
-          const rect = resizeWrap.getBoundingClientRect();
+          const rect = document
+            .querySelector(".resizableWrap")
+            .getBoundingClientRect();
 
           if (currentResizer.classList.contains("se")) {
-            resizeWrap.style.width = rect.width - (prevX - e.clientX) + "px";
-            resizeWrap.style.height = rect.height - (prevY - e.clientY) + "px";
+            document.querySelector(".resizableWrap").style.width =
+              rect.width - (prevX - e.clientX) + "px";
+            document.querySelector(".resizableWrap").style.height =
+              rect.height - (prevY - e.clientY) + "px";
           }
 
           prevX = e.clientX;
@@ -50,18 +53,20 @@ const ResizableComponent = () => {
       let prevX = e.clientX;
       let prevY = e.clientY;
       const mouseMove = (e) => {
-        if (isResizing === true) {
-          console.log("....");
-          let newX = prevX - e.clientX;
-          let newY = prevY - e.clientY;
+        console.log("....");
+        let newX = prevX - e.clientX;
+        let newY = prevY - e.clientY;
 
-          const rect = resizeWrap.getBoundingClientRect();
-          resizeWrap.style.left = rect.left - newX + "px";
-          resizeWrap.style.top = rect.top - newY + "px";
+        const rect = document
+          .querySelector(".resizableWrap")
+          .getBoundingClientRect();
+        document.querySelector(".resizableWrap").style.left =
+          rect.left - newX + "px";
+        document.querySelector(".resizableWrap").style.top =
+          rect.top - newY + "px";
 
-          prevX = e.clientX;
-          prevY = e.clientY;
-        }
+        prevX = e.clientX;
+        prevY = e.clientY;
       };
       const mouseUp = () => {
         window.removeEventListener("mousemove", mouseMove);
@@ -70,8 +75,10 @@ const ResizableComponent = () => {
       window.addEventListener("mousemove", mouseMove);
       window.addEventListener("mouseup", mouseUp);
     };
-    resizeWrap.addEventListener("mousedown", mouseDown);
-  });
+    document
+      .querySelector(".resizableWrap")
+      .addEventListener("mousedown", mouseDown);
+  }, []);
 
   return (
     <div className="sizeContainer">
