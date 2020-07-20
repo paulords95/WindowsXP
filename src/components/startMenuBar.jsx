@@ -46,9 +46,11 @@ const MenuBar = (props) => {
     menu.style.height = "550px";
 
     const notePad = document.querySelector(".notepadContainer");
-    notePad.addEventListener("click", () => {
-      setStartMenu(false);
-    });
+    if (notePad) {
+      notePad.addEventListener("click", () => {
+        setStartMenu(false);
+      });
+    }
   }
 
   if (startMenu === false && document.querySelector(".startMenuWrapper")) {
