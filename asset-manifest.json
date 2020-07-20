@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/WindowsXP/static/css/main.fa923966.chunk.css",
-    "main.js": "/WindowsXP/static/js/main.fdd730fa.chunk.js",
-    "main.js.map": "/WindowsXP/static/js/main.fdd730fa.chunk.js.map",
+    "main.css": "/WindowsXP/static/css/main.59a0d723.chunk.css",
+    "main.js": "/WindowsXP/static/js/main.7a863bd8.chunk.js",
+    "main.js.map": "/WindowsXP/static/js/main.7a863bd8.chunk.js.map",
     "runtime-main.js": "/WindowsXP/static/js/runtime-main.08e4eaaf.js",
     "runtime-main.js.map": "/WindowsXP/static/js/runtime-main.08e4eaaf.js.map",
-    "static/js/2.b50d294a.chunk.js": "/WindowsXP/static/js/2.b50d294a.chunk.js",
-    "static/js/2.b50d294a.chunk.js.map": "/WindowsXP/static/js/2.b50d294a.chunk.js.map",
+    "static/js/2.11495158.chunk.js": "/WindowsXP/static/js/2.11495158.chunk.js",
+    "static/js/2.11495158.chunk.js.map": "/WindowsXP/static/js/2.11495158.chunk.js.map",
     "index.html": "/WindowsXP/index.html",
-    "precache-manifest.699e2e5aa250f7e81f89edbe2140f42c.js": "/WindowsXP/precache-manifest.699e2e5aa250f7e81f89edbe2140f42c.js",
+    "precache-manifest.585fbe6e5c8e1dec38ff707d64464fca.js": "/WindowsXP/precache-manifest.585fbe6e5c8e1dec38ff707d64464fca.js",
     "service-worker.js": "/WindowsXP/service-worker.js",
-    "static/css/main.fa923966.chunk.css.map": "/WindowsXP/static/css/main.fa923966.chunk.css.map",
-    "static/js/2.b50d294a.chunk.js.LICENSE.txt": "/WindowsXP/static/js/2.b50d294a.chunk.js.LICENSE.txt",
+    "static/css/main.59a0d723.chunk.css.map": "/WindowsXP/static/css/main.59a0d723.chunk.css.map",
+    "static/js/2.11495158.chunk.js.LICENSE.txt": "/WindowsXP/static/js/2.11495158.chunk.js.LICENSE.txt",
     "static/media/avatar.jfif": "/WindowsXP/static/media/avatar.89a810dd.jfif",
     "static/media/defender.png": "/WindowsXP/static/media/defender.d11607df.png",
     "static/media/github.png": "/WindowsXP/static/media/github.9ce68bca.png",
     "static/media/linkedin.png": "/WindowsXP/static/media/linkedin.e12cf052.png",
     "static/media/logo.png": "/WindowsXP/static/media/logo.6f785991.png",
+    "static/media/notepad.png": "/WindowsXP/static/media/notepad.fc05456e.png",
     "static/media/App.css": "/WindowsXP/static/media/wallaper.14b69415.jpg",
     "static/media/wally.png": "/WindowsXP/static/media/wally.eb1d64c8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.08e4eaaf.js",
-    "static/js/2.b50d294a.chunk.js",
-    "static/css/main.fa923966.chunk.css",
-    "static/js/main.fdd730fa.chunk.js"
+    "static/js/2.11495158.chunk.js",
+    "static/css/main.59a0d723.chunk.css",
+    "static/js/main.7a863bd8.chunk.js"
   ]
 }
