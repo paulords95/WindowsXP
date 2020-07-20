@@ -30,7 +30,6 @@ const Resize = () => {
       let prevX = e.clientX;
       let prevY = e.clientY;
       const mouseMove = (e) => {
-        console.log("....");
         let newX = prevX - e.clientX;
         let newY = prevY - e.clientY;
 
@@ -53,7 +52,7 @@ const Resize = () => {
       window.addEventListener("mouseup", mouseUp);
     };
     document
-      .querySelector(".resizableWrap")
+      .querySelector(".notepadContainer")
       .addEventListener("mousedown", mouseDown);
   };
 
