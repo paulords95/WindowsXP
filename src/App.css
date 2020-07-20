@@ -8,4 +8,36 @@
   height: 100vh;
   min-height: 500px;
   overflow: hidden;
+  position: relative;
+}
+.containerIcon {
+  display: flex;
+  position: relative;
+  z-index: 0;
+}
+
+.notepadNormal {
+  position: relative;
+  left: 5px;
+  top: 5px;
+  width: 70px;
+}
+
+.notepadNormal:hover {
+  background-color: rgba(142, 201, 209, 0.6);
+  border-radius: 5px;
+}
+
+.notepadClicked {
+  position: relative;
+  left: 5px;
+  top: 5px;
+  width: 70px;
+  background-color: rgba(71, 63, 179, 0.7);
+  border-radius: 5px;
+}
+
+.appSpace {
+  position: absolute;
+  width: 80vw;
 }
