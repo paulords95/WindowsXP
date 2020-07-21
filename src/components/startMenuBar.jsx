@@ -84,6 +84,7 @@ const MenuBar = (props) => {
           <img alt="logo" src={logo}></img>
           <h1>Inciar</h1>
         </div>
+        <div className="openApp noselect">Bloco de Notas</div>
         <div className="toolsWrap">
           <img alt="defender" id="defender" src={defender}></img>
           <img alt="sound" id="sound" src={soundlogo}></img>

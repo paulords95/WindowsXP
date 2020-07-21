@@ -34,7 +34,8 @@ function App() {
     <div className="App">
       <div className="appSpace">{renderResize()}</div>
       <StartBar />
-      <div className="containerIcon">
+      <div className={`${dclick ? 'containerIconClicked' : 'containerIcon'} ` }>
+      <h1 className='iconName noselect'>Bloco de Notas</h1>
         <img
           src={notepadLogo}
           alt="logo"
@@ -48,6 +49,7 @@ function App() {
           }}
           className={`notepadNormal ${dclick ? "notepadClicked" : ""}`}
         ></img>
+       
       </div>
     </div>
   );

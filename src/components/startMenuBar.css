@@ -23,10 +23,12 @@
   border-top-right-radius: 20% 50px;
   border-bottom-right-radius: 20% 50px;
   box-shadow: inset 1px 2px 2px white;
+  margin-right: 5px;
 }
 
 .startMenu:hover {
   cursor: pointer;
+  box-shadow: inset -5px 4px 2px rgba(255, 255, 255, 0.452);
 }
 
 .startMenu > img {
@@ -107,4 +109,25 @@
   position: absolute;
   width: 100%;
   height: 100vh;
+}
+
+.openApp {
+  position: relative;
+  width: max-content;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  height: 80%;
+  background-color: rgba(114, 218, 250, 0.322);
+  margin-top: 2px;
+  border-radius: 7px;
+}
+
+.openApp:hover {
+  box-shadow: inset -5px 4px 2px rgba(255, 255, 255, 0.452);
+  cursor: default;
 }

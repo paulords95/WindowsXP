@@ -14,8 +14,42 @@
   display: flex;
   position: relative;
   z-index: 0;
+  width: 92px;
+  top: 5px;
+  left: 5px;
 }
 
+.containerIcon:hover {
+  box-shadow: inset -2px 2px 2px rgba(255, 255, 255, 0.384);
+  background-color: rgba(175, 170, 190, 0.3);
+  padding-bottom: 40px;
+  width: 92px;
+  top: 5px;
+  border-radius: 4px;
+  left: 5px;
+}
+
+.containerIconClicked {
+  display: flex;
+  position: relative;
+  z-index: 0;
+  background-color: rgba(69, 58, 105, 0.6);
+  padding-bottom: 40px;
+  width: 92px;
+  top: 5px;
+  border-radius: 4px;
+  left: 5px;
+}
+
+.iconName {
+  position: absolute;
+  left: 10px;
+  top: 60px;
+  font-size: 16px;
+  max-width: 70px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
 .notepadNormal {
   position: relative;
   left: 5px;
@@ -23,21 +57,24 @@
   width: 70px;
 }
 
-.notepadNormal:hover {
-  background-color: rgba(142, 201, 209, 0.6);
-  border-radius: 5px;
-}
-
 .notepadClicked {
   position: relative;
   left: 5px;
   top: 5px;
   width: 70px;
-  background-color: rgba(71, 63, 179, 0.7);
-  border-radius: 5px;
 }
 
 .appSpace {
   position: absolute;
   width: 80vw;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }
