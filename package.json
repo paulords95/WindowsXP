@@ -15,6 +15,7 @@
     "react-resizable": "^1.10.1",
     "react-resizable-component": "^1.1.0",
     "react-resize-panel": "^0.3.5",
+    "react-responsive-canvas": "^1.0.2",
     "react-rnd": "^10.1.10",
     "react-scripts": "3.4.1",
     "tailwindcss": "^1.4.6"

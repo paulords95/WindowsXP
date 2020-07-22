@@ -42,3 +42,7 @@
   width: auto;
   height: auto;
 }
+
+.canvas {
+  position: relative;
+}

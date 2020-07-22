@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./paint.css";
 
 window.addEventListener("load", () => {
@@ -6,12 +6,8 @@ window.addEventListener("load", () => {
   const board = document.querySelector(".drawingBoard");
   const ctx = canvas.getContext("2d");
 
-  const setSize = () => {
-    canvas.width = board.offsetWidth;
-    canvas.height = board.offsetHeight;
-  };
-
-  setSize();
+  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth;
 
   let painting = false;
 
@@ -30,44 +26,16 @@ window.addEventListener("load", () => {
     ctx.lineCap = "round";
     ctx.strokeStyle = "red";
 
-    var xy = getMousePos(e);
-
-    ctx.lineTo(xy.x, xy.y);
+    ctx.lineTo(e.clientX - 180, e.clientY - 180);
     ctx.stroke();
     ctx.beginPath();
-    ctx.moveTo(xy.x, xy.y);
+    ctx.moveTo(e.clientX - 180, e.clientY - 180);
   };
 
   canvas.addEventListener("mousedown", startPaint);
   canvas.addEventListener("mouseup", stopPainting);
   canvas.addEventListener("mousemove", draw);
 });
-
-function getMousePos(evt) {
-  const canvasName = document.querySelector(".canvas");
-  var rect = canvasName.getBoundingClientRect();
-
-  var X =
-    (evt.clientX - rect.left) / (canvasName.clientWidth / canvasName.width);
-  var Y =
-    (evt.clientY - rect.top) / (canvasName.clientHeight / canvasName.height);
-  X = Math.ceil(X);
-  Y = Math.ceil(Y);
-
-  return {
-    x: X,
-    y: Y,
-  };
-}
-
-const setSize = () => {
-  const canvas = document.querySelector(".canvas");
-  const board = document.querySelector(".drawingBoard");
-  canvas.width = board.offsetWidth;
-  canvas.height = board.offsetHeight;
-};
-
-window.addEventListener("resize", setSize);
 
 const Paint = () => {
   return (
