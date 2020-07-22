@@ -1,0 +1,53 @@
+import React from "react";
+import "./paint.css";
+
+window.addEventListener("load", () => {
+  const canvas = document.querySelector(".canvas");
+  const board = document.querySelector(".drawingBoard");
+  const ctx = canvas.getContext("2d");
+
+  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth;
+
+  let painting = false;
+
+  const startPaint = () => {
+    painting = true;
+  };
+
+  const stopPainting = () => {
+    painting = false;
+    ctx.beginPath();
+  };
+
+  const draw = (e) => {
+    if (!painting) return;
+    ctx.lineWidth = "10";
+    ctx.lineCap = "round";
+    ctx.strokeStyle = "red";
+
+    ctx.lineTo(e.clientX, e.clientY);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(e.clientX, e.clientY);
+  };
+
+  canvas.addEventListener("mousedown", startPaint);
+  canvas.addEventListener("mouseup", stopPainting);
+  canvas.addEventListener("mousemove", draw);
+});
+
+const Paint = () => {
+  return (
+    <div className="paintContainer">
+      <div className="paintApp">
+        <div className="paintHeader"></div>
+        <div className="paintOptions"></div>
+        <div className="drawingBoard"></div>
+        <canvas style={{ zIndex: 10 }} className="canvas"></canvas>
+      </div>
+    </div>
+  );
+};
+
+export default Paint;
