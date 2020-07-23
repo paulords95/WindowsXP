@@ -10,7 +10,7 @@
 .paintApp {
   position: relative;
   margin: auto;
-  height: 60vh;
+  height: 75vh;
   width: 60vw;
   background-color: white;
   border-radius: 5px;
@@ -57,7 +57,7 @@
   width: 80px;
   top: 5px;
   background-color: white;
-  margin-left: 50px;
+  margin-left: 2%;
 }
 
 .colorSelector {
@@ -74,7 +74,7 @@
   height: 80%;
   width: 80px;
   top: 5px;
-  margin-right: 50px;
+  margin-right: 2%;
   background-color: rgb(29, 7, 7);
 }
 
@@ -105,6 +105,7 @@
 
 #one:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #two {
@@ -113,6 +114,7 @@
 
 #two:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #three {
@@ -121,6 +123,7 @@
 
 #three:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #four {
@@ -129,6 +132,7 @@
 
 #four:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #five {
@@ -137,6 +141,7 @@
 
 #five:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #six {
@@ -145,6 +150,7 @@
 
 #six:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #seven {
@@ -153,6 +159,7 @@
 
 #seven:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #eight {
@@ -161,6 +168,7 @@
 
 #eigth:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #nine {
@@ -169,6 +177,7 @@
 
 #nine:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #ten {
@@ -177,6 +186,7 @@
 
 #ten:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #eleven {
@@ -185,6 +195,7 @@
 
 #eleven:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #twelve {
@@ -194,6 +205,7 @@
 
 #twelve:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #thirteen {
@@ -202,6 +214,7 @@
 
 #thirteen:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #fourteen {
@@ -211,6 +224,7 @@
 
 #fourteen:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #fifteen {
@@ -219,6 +233,7 @@
 
 #fifteen:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #sixteen {
@@ -227,6 +242,7 @@
 
 #sixteen:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #seventeen {
@@ -235,6 +251,7 @@
 
 #seventeen:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 
@@ -244,6 +261,7 @@
 
 #eighteen:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #nineteen {
@@ -252,6 +270,7 @@
 
 #nineteen:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #twenty {
@@ -261,6 +280,7 @@
 
 #twenty:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #twentyOne {
@@ -269,6 +289,7 @@
 
 #twentyOne:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 
@@ -278,6 +299,7 @@
 
 #twentyTwo:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #twentyThree {
@@ -286,6 +308,7 @@
 
 #twentyThree:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 
@@ -295,6 +318,7 @@
 
 #twentyFour:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #twentyFive {
@@ -303,6 +327,7 @@
 
 #twentyFive:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #twentySix {
@@ -311,6 +336,7 @@
 
 #twentySix:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #twentySeven {
@@ -319,6 +345,7 @@
 
 #twentySeven:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #twentyEight {
@@ -327,6 +354,7 @@
 
 #twentyEigth:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #twentyNine {
@@ -335,6 +363,7 @@
 
 #twentyNine:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #thirty {
@@ -344,6 +373,7 @@
 
 #thirty:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #thirtyOne {
@@ -353,6 +383,7 @@
 
 #thirtyOne:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }
 
 #thirtyTwo {
@@ -360,6 +391,7 @@
 }
 
 
-#thirtyThree:hover {
+#thirtyTwo:hover {
   transform: scale(1.1);
+  border: 1px solid black;
 }

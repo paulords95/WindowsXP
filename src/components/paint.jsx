@@ -1,75 +1,90 @@
-import React from "react";
+import React, {useState} from "react";
 import "./paint.css";
 
-window.addEventListener("load", () => {
-  const canvas = document.querySelector(".canvas");
-  const board = document.querySelector(".drawingBoard");
-  const ctx = canvas.getContext("2d");
 
+
+const Paint = () => {
+  const [color, setColor] = useState('One')
+  
+
+  window.addEventListener("load", () => {
+    const canvas = document.querySelector(".canvas");
+    const board = document.querySelector(".drawingBoard");
+    const ctx = canvas.getContext("2d");
+  
+    const setSize = () => {
+      canvas.width = board.offsetWidth;
+      canvas.height = board.offsetHeight;
+    };
+  
+    setSize();
+  
+    let painting = false;
+  
+    const startPaint = () => {
+      painting = true;
+    };
+  
+    const stopPainting = () => {
+      painting = false;
+      ctx.beginPath();
+    };
+  
+    const draw = (e) => {
+      if (!painting) return;
+      ctx.lineWidth = "10";
+      ctx.lineCap = "round";
+      setInterval(()=> {
+        if (color.active === "One") {
+          ctx.strokeStyle = '#010000'
+        }
+        if (color.active === "Two") {
+          ctx.strokeStyle = '#858182'
+        }
+  
+      }, 50)
+      
+  
+      var xy = getMousePos(e);
+  
+      ctx.lineTo(xy.x, xy.y);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(xy.x, xy.y);
+    };
+  
+    canvas.addEventListener("mousedown", startPaint);
+    canvas.addEventListener("mouseup", stopPainting);
+    canvas.addEventListener("mousemove", draw);
+  });
+  
+  function getMousePos(evt) {
+    const canvasName = document.querySelector(".canvas");
+    var rect = canvasName.getBoundingClientRect();
+  
+    var X =
+      (evt.clientX - rect.left) / (canvasName.clientWidth / canvasName.width);
+    var Y =
+      (evt.clientY - rect.top) / (canvasName.clientHeight / canvasName.height);
+    X = Math.ceil(X);
+    Y = Math.ceil(Y);
+  
+    return {
+      x: X,
+      y: Y,
+    };
+  }
+  
   const setSize = () => {
+    const canvas = document.querySelector(".canvas");
+    const board = document.querySelector(".drawingBoard");
     canvas.width = board.offsetWidth;
     canvas.height = board.offsetHeight;
   };
+  
+  window.addEventListener("resize", setSize);
 
-  setSize();
 
-  let painting = false;
-
-  const startPaint = () => {
-    painting = true;
-  };
-
-  const stopPainting = () => {
-    painting = false;
-    ctx.beginPath();
-  };
-
-  const draw = (e) => {
-    if (!painting) return;
-    ctx.lineWidth = "10";
-    ctx.lineCap = "round";
-    ctx.strokeStyle = "red";
-
-    var xy = getMousePos(e);
-
-    ctx.lineTo(xy.x, xy.y);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.moveTo(xy.x, xy.y);
-  };
-
-  canvas.addEventListener("mousedown", startPaint);
-  canvas.addEventListener("mouseup", stopPainting);
-  canvas.addEventListener("mousemove", draw);
-});
-
-function getMousePos(evt) {
-  const canvasName = document.querySelector(".canvas");
-  var rect = canvasName.getBoundingClientRect();
-
-  var X =
-    (evt.clientX - rect.left) / (canvasName.clientWidth / canvasName.width);
-  var Y =
-    (evt.clientY - rect.top) / (canvasName.clientHeight / canvasName.height);
-  X = Math.ceil(X);
-  Y = Math.ceil(Y);
-
-  return {
-    x: X,
-    y: Y,
-  };
-}
-
-const setSize = () => {
-  const canvas = document.querySelector(".canvas");
-  const board = document.querySelector(".drawingBoard");
-  canvas.width = board.offsetWidth;
-  canvas.height = board.offsetHeight;
-};
-
-window.addEventListener("resize", setSize);
-
-const Paint = () => {
   return (
     <div className="paintContainer">
       <div className="paintApp">
@@ -78,10 +93,10 @@ const Paint = () => {
           <div className="drawingSelector"></div>
           <div className="colorSelector">
             <div className="colorPallet">
-              <div id="one"></div>
-              <div id="two"></div>
+              <div id="one" onClick={()=> setColor('One')}></div>
+              <div id="two" onClick={()=> setColor('Two')}></div>
               <div id="three"></div>
-              <div id="four"></div>
+              <div id="four" ></div>
               <div id="five"></div>
               <div id="six"></div>
               <div id="seven"></div>
