@@ -103,6 +103,7 @@ const Paint = () => {
         <div className="paintOptions">
           <div className="drawingSelector">
             <form className='sizeForm'>
+              <label>Tamanho: </label>
             <select onChange={handleOptionSubmit} id="size" name="sizeList" form="sizeForm">
               <option value="1">1</option>
               <option value="5">5</option>

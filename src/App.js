@@ -33,6 +33,8 @@ function App() {
   };
 
   return (
+    <div>
+    <div className='bg'></div>
     <div className="App">
       <div className="appSpace">{renderResize()}</div>
       <Paint />
@@ -53,6 +55,7 @@ function App() {
           className={`notepadNormal ${dclick ? "notepadClicked" : ""}`}
         ></img>
       </div>
+    </div>
     </div>
   );
 }
