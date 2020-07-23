@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./paint.css";
 
 window.addEventListener("load", () => {
@@ -74,7 +74,46 @@ const Paint = () => {
     <div className="paintContainer">
       <div className="paintApp">
         <div className="paintHeader"></div>
-        <div className="paintOptions"></div>
+        <div className="paintOptions">
+          <div className="drawingSelector"></div>
+          <div className="colorSelector">
+            <div className="colorPallet">
+              <div id="one"></div>
+              <div id="two"></div>
+              <div id="three"></div>
+              <div id="four"></div>
+              <div id="five"></div>
+              <div id="six"></div>
+              <div id="seven"></div>
+              <div id="eigth"></div>
+              <div id="nine"></div>
+              <div id="ten"></div>
+              <div id="eleven"></div>
+              <div id="twelve"></div>
+              <div id="thirteen"></div>
+              <div id="fourteen"></div>
+              <div id="fifteen"></div>
+              <div id="sixteen"></div>
+              <div id="seventeen"></div>
+              <div id="eighteen"></div>
+              <div id="nineteen"></div>
+              <div id="twenty"></div>
+              <div id="twentyOne"></div>
+              <div id="twentyTwo"></div>
+              <div id="twentyThree"></div>
+              <div id="twentyFour"></div>
+              <div id="twentyFive"></div>
+              <div id="twentySix"></div>
+              <div id="twentySeven"></div>
+              <div id="twentyEight"></div>
+              <div id="twentyNine"></div>
+              <div id="thirty"></div>
+              <div id="thirtyOne"></div>
+              <div id="thirtyTwo"></div>
+            </div>
+          </div>
+          <div className="selectedColor"></div>
+        </div>
         <div className="drawingBoard"></div>
         <canvas style={{ zIndex: 10 }} className="canvas"></canvas>
       </div>

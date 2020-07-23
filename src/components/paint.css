@@ -27,6 +27,9 @@
 }
 
 .paintOptions {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
   height: 50px;
   width: 100%;
   background-color: #edebdd;
@@ -45,4 +48,182 @@
 
 .canvas {
   position: relative;
+}
+
+
+.drawingSelector {
+  position: relative;
+  height: 80%;
+  width: 80px;
+  top: 5px;
+  background-color: white;
+  margin-left: 50px;
+}
+
+.colorSelector {
+  position: relative;
+  height: 80%;
+  width: max-content;
+  top: 5px;
+  background-color: whitesmoke;
+}
+
+.selectedColor {
+  position: relative;
+  height: 80%;
+  width: 80px;
+  top: 5px;
+  margin-right: 50px;
+  background-color: rgb(29, 7, 7);
+}
+
+
+.colorPallet {
+  display: grid;
+  position: relative;
+  top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  grid-row: 1;
+  grid-template-columns: 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px;
+  grid-template-rows: 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px;
+  grid-gap: 2px;
+  color: #444;
+}
+
+.colorPallet>div {
+  background-color: rgb(32, 22, 175);
+  color: #fff;
+  padding: 5px;
+  font-size: 150%;
+}
+
+#one {
+  background-color: #010000;
+}
+
+
+#two {
+  background-color: #858182;
+}
+
+#three {
+  background-color: #8C0212;
+}
+
+#four {
+  background-color: #EE221B;
+}
+
+
+#five {
+  background-color: #E2EEFC;
+}
+
+#six {
+  background-color: #FFF410;
+}
+
+#seven {
+  background-color: #21B350;
+}
+
+#eight {
+  background-color: #00A7E6;
+}
+
+#nine {
+  background-color: #08A5F4;
+}
+
+#ten {
+  background-color: #404AD0;
+}
+
+#eleven {
+  background-color: #A949AD;
+}
+
+#twelve {
+  background-color: #FFFDFC;
+}
+
+#thirteen {
+  background-color: #C9C7C8;
+}
+
+#fourteen {
+  background-color: #BD7C60;
+}
+
+#fifteen {
+  background-color: #FFAFD0;
+}
+
+#sixteen {
+  background-color: #F5D504;
+}
+
+#seventeen {
+  background-color: #F5E8B4;
+}
+
+#eighteen {
+  background-color: #BAE345;
+}
+
+#nineteen {
+  background-color: #9FDEF0;
+}
+
+#twenty {
+  background-color: #6F98C6;
+}
+
+#twentyOne {
+  background-color: #CCC3EE;
+}
+
+#twentyTwo {
+  background-color: #7387fb;
+}
+
+#twentyThree {
+  background-color: #9f962c;
+}
+
+#twentyFour {
+  background-color: #f77f1d;
+}
+
+#twentyFive {
+  background-color: #588e6e;
+}
+
+#twentySix {
+  background-color: #99f4d6;
+}
+
+#twentySeven {
+  background-color: #54a5d0;
+}
+
+#twentyEight {
+  background-color: #8b3609;
+}
+
+#twentyNine {
+  background-color: #6eca59;
+}
+
+#thirty {
+  background-color: #ceb37f;
+}
+
+#thirtyOne {
+  background-color: #550ad2;
+}
+
+#thirtyTwo {
+  background-color: #4668ea;
 }
