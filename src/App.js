@@ -6,8 +6,7 @@ import StartBar from "./components/startMenuBar";
 import Resize from "./components/resize";
 import notepadLogo from "./imgs/notepad.png";
 
-
-import Paint from './components/paint'
+import Paint from "./components/paint";
 
 function App() {
   const [dclick, setDclick] = useState(false);
@@ -36,10 +35,10 @@ function App() {
   return (
     <div className="App">
       <div className="appSpace">{renderResize()}</div>
-      <Paint/>
+      <Paint />
       <StartBar />
-      <div className={`${dclick ? 'containerIconClicked' : 'containerIcon'} ` }>
-      <h1 className='iconName noselect'>Bloco de Notas</h1>
+      <div className={`${dclick ? "containerIconClicked" : "containerIcon"} `}>
+        <h1 className="iconName noselect">Bloco de Notas</h1>
         <img
           src={notepadLogo}
           alt="logo"
@@ -53,7 +52,6 @@ function App() {
           }}
           className={`notepadNormal ${dclick ? "notepadClicked" : ""}`}
         ></img>
-       
       </div>
     </div>
   );
