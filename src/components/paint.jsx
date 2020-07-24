@@ -3,7 +3,7 @@ import "./paint.css";
 
 const Paint = () => {
   const [color, setColor] = useState("#010000");
-  const [lineSize, setLineSize] = useState(5)
+  const [lineSize, setLineSize] = useState(5);
 
   const colorChange = (clr) => {
     setColor(clr);
@@ -13,11 +13,10 @@ const Paint = () => {
   };
 
   const sizeChange = (sz) => {
-    setLineSize(sz)
+    setLineSize(sz);
     const ctx = document.querySelector(".canvas").getContext("2d");
     ctx.lineWidth = sz;
-  }
-
+  };
 
   useEffect(() => {
     colorChange(color);
@@ -93,32 +92,46 @@ const Paint = () => {
   });
 
   const handleOptionSubmit = (e) => {
-    sizeChange(e.target.value)
-  }
+    sizeChange(e.target.value);
+  };
 
   return (
     <div className="paintContainer">
       <div className="paintApp">
-        <div className="paintHeader"></div>
+        <div className="paintHeader">
+          <h3>Sem título - Paint</h3>
+          <div className="closePaint">X</div>
+          <div className="maximizePaint">
+            <span></span>
+          </div>
+          <div className="minimizePaint">
+            <span></span>
+          </div>
+        </div>
         <div className="paintOptions">
           <div className="drawingSelector">
-            <form className='sizeForm'>
+            <form className="sizeForm">
               <label>Tamanho: </label>
-            <select onChange={handleOptionSubmit} id="size" name="sizeList" form="sizeForm">
-              <option value="1">1</option>
-              <option value="5">5</option>
-              <option value="10">10</option>
-              <option value="15">15</option>
-              <option value="25">25</option>
-              <option value="30">30</option>
-              <option value="35">35</option>
-              <option value="40">40</option>
-              <option value="45">45</option>
-              <option value="50">50</option>
-              <option value="55">55</option>
-              <option value="60">60</option>
-              <option value="65">65</option>
-            </select>
+              <select
+                onChange={handleOptionSubmit}
+                id="size"
+                name="sizeList"
+                form="sizeForm"
+              >
+                <option value="1">1</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+                <option value="35">35</option>
+                <option value="40">40</option>
+                <option value="45">45</option>
+                <option value="50">50</option>
+                <option value="55">55</option>
+                <option value="60">60</option>
+                <option value="65">65</option>
+              </select>
             </form>
           </div>
           <div className="colorSelector">

@@ -21,7 +21,7 @@
   z-index: 1;
 }
 
-.notepadContainer > h3 {
+.notepadContainer>h3 {
   position: absolute;
   color: white;
   font-size: 14px;
@@ -30,7 +30,7 @@
   top: -5px;
 }
 
-.closePad {
+.closePaint {
   position: absolute;
   top: 2px;
   right: 2px;
@@ -43,12 +43,12 @@
   border: 1px solid white;
 }
 
-.closePad:hover {
+.closePaint:hover {
   cursor: pointer;
   box-shadow: inset -2px 2px 2px rgba(255, 255, 255, 0.575);
 }
 
-.maximizePad {
+.maximizePaint {
   position: absolute;
   top: 2px;
   right: 27px;
@@ -60,17 +60,17 @@
   border: 1px solid white;
 }
 
-.maximizePad::after {
+.maximizePaint::after {
   content: "";
   color: white;
 }
 
-.maximizePad:hover {
+.maximizePaint:hover {
   cursor: pointer;
   box-shadow: inset -2px 2px 2px rgba(255, 255, 255, 0.623);
 }
 
-.maximizePad > span {
+.maximizePaint>span {
   position: absolute;
   width: 12px;
   height: 9px;
@@ -82,7 +82,7 @@
   border-right: 1px solid rgb(255, 255, 255);
 }
 
-.minimizePad {
+.minimizePaint {
   position: absolute;
   top: 2px;
   right: 52px;
@@ -94,12 +94,12 @@
   border: 1px solid white;
 }
 
-.maximizePad:hover {
+.maximizePaint:hover {
   cursor: pointer;
   box-shadow: inset -2px 2px 2px rgba(255, 255, 255, 0.575);
 }
 
-.minimizePad > span {
+.minimizePaint>span {
   position: absolute;
   width: 12px;
   height: 9px;
@@ -108,7 +108,7 @@
   border-bottom: 2px solid rgb(255, 255, 255);
 }
 
-.minimizePad:hover {
+.minimizePaint:hover {
   cursor: pointer;
   box-shadow: inset -2px 2px 2px rgba(255, 255, 255, 0.582);
 }
@@ -143,7 +143,7 @@
   left: -40px;
 }
 
-.fileTab > li {
+.fileTab>li {
   display: flex;
   position: relative;
   color: black;
@@ -155,7 +155,7 @@
   font-size: 14px;
 }
 
-.fileTab > li:hover {
+.fileTab>li:hover {
   background-color: #235ed6;
   color: white;
   cursor: default;
