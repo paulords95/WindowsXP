@@ -10,10 +10,13 @@ import paintLogo from "./imgs/paint.png";
 import Paint from "./components/paint";
 
 function App() {
-  const [dclick, setDclick] = useState(false);
+  const [dclick, setDclick] = useState({
+    notePad: false,
+    paint: true
+  });
 
   const renderResize = () => {
-    if (dclick) {
+    if (dclick.notePad) {
       return (
         <div className="notepadRender">
           <Resize />
@@ -21,18 +24,44 @@ function App() {
       );
     }
 
-    if (!dclick) {
+    if (dclick.paint) {
+      return (
+        <div className="paintRender">
+          <Paint
+            load = {dclick.paint}
+          />
+        </div>
+      );
+    }
+
+    if (!dclick.notePad || dclick.paint) {
       return <div></div>;
     }
   };
 
-  const actionsMenu = () => {
-    const close = document.querySelector(".closePad");
-    close.addEventListener("click", () => {
-      setDclick(false);
+  const actionsMenuNotepad = () => {
+      const close = document.querySelector(".closePad");
+      close.addEventListener("click", () => {
+      setDclick({
+        notePad: false
+      });
     });
+    
+  
   };
 
+
+  const actionsMenuPaint = ()=> {
+    const close = document.querySelector(".closePaint");
+    close.addEventListener("click", () => {
+    setDclick({
+      paint: false
+    });
+  });
+  
+  }
+
+  
   return (
     <div>
       <div className="bg"></div>
@@ -41,26 +70,29 @@ function App() {
         {/*<Paint />*/}
         <StartBar />
         <div
-          className={`${dclick ? "containerIconClicked" : "containerIcon"} `}
+          className={`${dclick.notePad ? "containerIconClicked" : "containerIcon"} `}
         >
           <h1 className="iconName noselect">Bloco de Notas</h1>
           <img
             src={notepadLogo}
             alt="logo"
             onDoubleClick={() => {
-              if (!dclick) {
-                setDclick(true);
+              if (!dclick.notePad) {
+                setDclick({
+                  notePad: true
+                });
                 setTimeout(() => {
-                  actionsMenu();
+                  console.log('actionmenu')
+                  actionsMenuNotepad();
                 }, 50);
               }
             }}
-            className={`notepadNormal ${dclick ? "notepadClicked" : ""}`}
+            className={`notepadNormal ${dclick.notePad ? "notepadClicked" : ""}`}
           ></img>
         </div>
         <div
           className={`${
-            dclick ? "containerIconClickedPaint" : "containerIconPaint"
+            dclick.paint ? "containerIconClickedPaint" : "containerIconPaint"
           } `}
         >
           <h1 className="iconNamePaint noselect">Paint</h1>
@@ -68,10 +100,12 @@ function App() {
             src={paintLogo}
             alt="logo"
             onDoubleClick={() => {
-              if (!dclick) {
-                setDclick(true);
+              if (!dclick.paint) {
+                setDclick({
+                  paint: true
+                });
                 setTimeout(() => {
-                  actionsMenu();
+                 actionsMenuPaint()
                 }, 50);
               }
             }}

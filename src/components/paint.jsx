@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./paint.css";
 
-const Paint = () => {
-  const [color, setColor] = useState("#010000");
+const Paint = (props) => {
+  const [color, setColor] = useState("#ffff");
   const [lineSize, setLineSize] = useState(5);
 
   const colorChange = (clr) => {
@@ -23,44 +23,46 @@ const Paint = () => {
   }, [color]);
 
   window.addEventListener("load", () => {
-    const canvas = document.querySelector(".canvas");
-    const board = document.querySelector(".drawingBoard");
-    const ctx = canvas.getContext("2d");
+      const canvas = document.querySelector(".canvas");
+      const board = document.querySelector(".drawingBoard");
+      const ctx = canvas.getContext("2d");
+  
+      const setSize = () => {
+        canvas.width = board.offsetWidth;
+        canvas.height = board.offsetHeight;
+      };
+  
+      setSize();
+  
+      let painting = false;
+  
+      const startPaint = () => {
+        painting = true;
+      };
+  
+      const stopPainting = () => {
+        painting = false;
+        ctx.beginPath();
+      };
+  
+      const draw = (e, clr) => {
+        if (!painting) return;
+        ctx.lineCap = "round";
+  
+        var xy = getMousePos(e);
+  
+        ctx.lineTo(xy.x, xy.y);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(xy.x, xy.y);
+      };
+  
+      canvas.addEventListener("mousedown", startPaint);
+      canvas.addEventListener("mouseup", stopPainting);
+      canvas.addEventListener("mousemove", draw);
+    });
+  
 
-    const setSize = () => {
-      canvas.width = board.offsetWidth;
-      canvas.height = board.offsetHeight;
-    };
-
-    setSize();
-
-    let painting = false;
-
-    const startPaint = () => {
-      painting = true;
-    };
-
-    const stopPainting = () => {
-      painting = false;
-      ctx.beginPath();
-    };
-
-    const draw = (e, clr) => {
-      if (!painting) return;
-      ctx.lineCap = "round";
-
-      var xy = getMousePos(e);
-
-      ctx.lineTo(xy.x, xy.y);
-      ctx.stroke();
-      ctx.beginPath();
-      ctx.moveTo(xy.x, xy.y);
-    };
-
-    canvas.addEventListener("mousedown", startPaint);
-    canvas.addEventListener("mouseup", stopPainting);
-    canvas.addEventListener("mousemove", draw);
-  });
 
   function getMousePos(evt) {
     const canvasName = document.querySelector(".canvas");
