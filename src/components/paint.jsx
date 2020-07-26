@@ -8,11 +8,11 @@ const Paint = (props) => {
   const colorChange = (clr) => {
     setColor(clr);
     const ctx = document.querySelector(".canvas").getContext("2d");
-    console.log(color);
     ctx.strokeStyle = color;
   };
 
   const sizeChange = (sz) => {
+    console.log(lineSize);
     setLineSize(sz);
     const ctx = document.querySelector(".canvas").getContext("2d");
     ctx.lineWidth = sz;
@@ -20,49 +20,50 @@ const Paint = (props) => {
 
   useEffect(() => {
     colorChange(color);
-  }, [color]);
+  });
 
-  window.addEventListener("load", () => {
-      const canvas = document.querySelector(".canvas");
-      const board = document.querySelector(".drawingBoard");
-      const ctx = canvas.getContext("2d");
-  
-      const setSize = () => {
-        canvas.width = board.offsetWidth;
-        canvas.height = board.offsetHeight;
-      };
-  
-      setSize();
-  
-      let painting = false;
-  
-      const startPaint = () => {
-        painting = true;
-      };
-  
-      const stopPainting = () => {
-        painting = false;
-        ctx.beginPath();
-      };
-  
-      const draw = (e, clr) => {
-        if (!painting) return;
-        ctx.lineCap = "round";
-  
-        var xy = getMousePos(e);
-  
-        ctx.lineTo(xy.x, xy.y);
-        ctx.stroke();
-        ctx.beginPath();
-        ctx.moveTo(xy.x, xy.y);
-      };
-  
-      canvas.addEventListener("mousedown", startPaint);
-      canvas.addEventListener("mouseup", stopPainting);
-      canvas.addEventListener("mousemove", draw);
-    });
-  
+  useEffect(() => {
+    const canvas = document.querySelector(".canvas");
+    const board = document.querySelector(".drawingBoard");
+    const ctx = canvas.getContext("2d");
 
+    colorChange("black");
+
+    const setSize = () => {
+      canvas.width = board.offsetWidth;
+      canvas.height = board.offsetHeight;
+      console.log("tamanho definido");
+    };
+
+    setSize();
+
+    let painting = false;
+
+    const startPaint = () => {
+      painting = true;
+    };
+
+    const stopPainting = () => {
+      painting = false;
+      ctx.beginPath();
+    };
+
+    const draw = (e, clr) => {
+      if (!painting) return;
+      ctx.lineCap = "round";
+
+      var xy = getMousePos(e);
+
+      ctx.lineTo(xy.x, xy.y);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(xy.x, xy.y);
+    };
+
+    canvas.addEventListener("mousedown", startPaint);
+    canvas.addEventListener("mouseup", stopPainting);
+    canvas.addEventListener("mousemove", draw);
+  }, []);
 
   function getMousePos(evt) {
     const canvasName = document.querySelector(".canvas");
@@ -84,11 +85,15 @@ const Paint = (props) => {
   const setSize = () => {
     const canvas = document.querySelector(".canvas");
     const board = document.querySelector(".drawingBoard");
-    canvas.width = board.offsetWidth;
-    canvas.height = board.offsetHeight;
+    if (canvas) {
+      canvas.width = board.offsetWidth;
+      canvas.height = board.offsetHeight;
+    }
   };
 
-  window.addEventListener("resize", setSize);
+  useEffect(() => {
+    window.addEventListener("resize", setSize);
+  });
   useEffect(() => {
     document.querySelector(".selectedColor").style.backgroundColor = color;
   });

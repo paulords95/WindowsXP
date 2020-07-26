@@ -50,9 +50,9 @@
 }
 
 .iconName {
-  position: absolute;
-  left: 10px;
-  top: 60px;
+  position: fixed;
+  left: 15px;
+  top: 70px;
   font-size: 16px;
   max-width: 70px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -96,7 +96,7 @@
 
 .iconNamePaint {
   position: fixed;
-  left: 30px;
+  left: 35px;
   top: 230px;
   font-size: 16px;
   max-width: 70px;
@@ -106,7 +106,7 @@
 
 .paintNormal {
   position: fixed;
-  left: 5px;
+  left: 15px;
   top: 170px;
   width: 70px;
   height: 60px;
