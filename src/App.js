@@ -17,6 +17,7 @@ function App() {
 
   const renderResize = () => {
     if (dclick.notePad) {
+      document.querySelector(".openApp").style.display = "flex";
       return (
         <div className="notepadRender">
           <Resize />
@@ -24,12 +25,21 @@ function App() {
       );
     }
 
+    if (document.querySelector(".openApp")) {
+      document.querySelector(".openApp").style.display = "none";
+    }
+
     if (dclick.paint) {
+      document.querySelector(".openAppPaint").style.display = "flex";
       return (
         <div className="paintRender">
           <PaintResizable load={dclick.paint} />
         </div>
       );
+    }
+
+    if (document.querySelector(".openAppPaint")) {
+      document.querySelector(".openAppPaint").style.display = "none";
     }
 
     if (!dclick.notePad || dclick.paint) {

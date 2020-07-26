@@ -31,14 +31,14 @@
   box-shadow: inset -5px 4px 2px rgba(255, 255, 255, 0.452);
 }
 
-.startMenu > img {
+.startMenu>img {
   position: absolute;
   width: 1.4rem;
   margin-left: -45px;
   margin-top: 5px;
 }
 
-.startMenu > h1 {
+.startMenu>h1 {
   display: block;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
@@ -62,14 +62,15 @@
   display: flex;
   flex-direction: column;
 }
-.toolsWrap > div {
+
+.toolsWrap>div {
   color: white;
   margin-top: 4px;
   margin-left: 50px;
   font-weight: 600;
 }
 
-.toolsWrap > div:hover {
+.toolsWrap>div:hover {
   cursor: pointer;
 }
 
@@ -96,12 +97,18 @@
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
@@ -112,6 +119,7 @@
 }
 
 .openApp {
+  display: none;
   position: relative;
   width: max-content;
   color: white;
@@ -128,6 +136,32 @@
 }
 
 .openApp:hover {
+  box-shadow: inset -5px 4px 2px rgba(255, 255, 255, 0.452);
+  cursor: default;
+}
+
+
+
+.openAppPaint {
+  display: none;
+  position: relative;
+
+  text-align: center;
+  color: white;
+  width: auto;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 40px;
+  padding-top: 5px;
+  padding-right: 40px;
+  height: 80%;
+  background-color: rgba(114, 218, 250, 0.322);
+  margin-top: 2px;
+  margin-left: 3px;
+  border-radius: 7px;
+}
+
+.openAppPaint:hover {
   box-shadow: inset -5px 4px 2px rgba(255, 255, 255, 0.452);
   cursor: default;
 }
